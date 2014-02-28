@@ -113,7 +113,7 @@ $(document).ready(function(){
 		var partnumber = $(element).find(".ims-partnumber").html().trim();
 	
 		$.getJSON(
-			"https://mod-dev2.jsc.nasa.gov/wiki/extensions/IMS/API.asmx/GetFullTreeByPartNumber",
+			"https://mod-dev2.jsc.nasa.gov/wiki/extensions/IMS/API.asmx/GetFullTreeByPartNumberJSONP?callback=?",
 			{
 				PartNumber : partnumber
 			},
@@ -137,7 +137,7 @@ $(document).ready(function(){
 		var serialnumber = $(element).find(".ims-serialnumber").html().trim();
 	
 		$.getJSON(
-			"https://mod-dev2.jsc.nasa.gov/wiki/extensions/IMS/API.asmx/GetFullTreeByCagePartSerial",
+			"https://mod-dev2.jsc.nasa.gov/wiki/extensions/IMS/API.asmx/GetFullTreeByCagePartSerialJSONP?callback=?",
 			{
 				CageCode : cagecode,
 				PartNumber : partnumber,

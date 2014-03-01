@@ -18,6 +18,7 @@ if (!defined('MEDIAWIKI')) {
 	die( "IMSQuery extension" );
 }
 
+
 $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'IMSQuery',

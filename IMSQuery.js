@@ -137,7 +137,7 @@ $(document).ready(function(){
 		var serialnumber = $(element).find(".ims-serialnumber").html().trim();
 	
 		$.getJSON(
-			"https://mod-dev2.jsc.nasa.gov/wiki/extensions/IMS/API.asmx/GetFullTreeByCagePartSerialJSONP?callback=?",
+			"https://mod-dev2.jsc.nasa.gov/wiki/IMS/API.asmx/GetFullTreeByCagePartSerialJSONP?callback=?",
 			{
 				CageCode : cagecode,
 				PartNumber : partnumber,
